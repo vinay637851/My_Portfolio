@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-xs: 1000px;
+}
+:root{
+  overflow-x: hidden;
+}
