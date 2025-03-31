@@ -17,9 +17,9 @@ function Contact(){
                 <div className="w-full min-h-96 h-max bg-white dark:bg-gray-900">
                     <p className="text-2xl p-2 font-bold text-gray-900 flex items-center gap-3 dark:text-gray-400"><Sparkles className="text-purple-800"/> Send a Message</p>
                     <Box component="form" className='flex flex-col p-4 justify-between h-[50vh]'>
-                        <TextField className='shadow-lg dark:shadow-gray-800 dark:bg-gray-900 ' id="outlined-basic" label="Name" variant="outlined" required InputLabelProps={{style: { color: '#22d3ee' }, }} />
-                        <TextField className='shadow-lg dark:shadow-gray-800 dark:bg-gray-900' id="outlined-basic" label="Email" variant="outlined" required InputLabelProps={{style: { color: '#22d3ee' }, }} />
-                        <TextField className='shadow-lg dark:shadow-gray-800 dark:bg-gray-900' label="Message" multiline rows={4} required InputLabelProps={{style: { color: '#22d3ee' }, }}/>
+                        <TextField className='shadow-lg  dark:shadow-gray-800 dark:bg-gray-900 ' id="outlined-basic" label="Name" variant="outlined" required InputLabelProps={{style: { color: '#22d3ee' }, }}  InputProps={{style: { color: "#38bdf8" },}} />
+                        <TextField className='shadow-lg dark:shadow-gray-800 dark:bg-gray-900' id="outlined-basic" label="Email" variant="outlined" required InputLabelProps={{style: { color: '#22d3ee' }, }} InputProps={{style: { color: "#38bdf8" },}} />
+                        <TextField className='shadow-lg dark:shadow-gray-800 dark:bg-gray-900' label="Message" multiline rows={4} required InputLabelProps={{style: { color: '#22d3ee' }, }} InputProps={{style: { color: "#38bdf8" },}}/>
                         <Button type='submit' variant="contained" className='flex gap-3'><Mail/>Send Message</Button>
                     </Box>
                 </div>
