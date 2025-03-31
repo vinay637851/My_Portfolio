@@ -4,9 +4,9 @@ import { Download } from 'lucide-react';
 import {UserRound,Award,Heart,BriefcaseBusiness,Target} from "lucide-react"
 function About(){
     return (
-        <div id="About" className="min-h-screen h-max w-screen py-10 flex flex-col justify-between items-center mr-0 p-0 box-border">
-            <span className="flex text-4xl font-bold justify-center items-center gap-2 text-gray-700"><UserRound size={35} className="text-indigo-800" /> About Me</span>
-            <div className="w-screen py-10 text-justify text-gray-600 flex flex-col md:flex-row">
+        <div id="About" className="min-h-screen h-max w-screen py-10 flex flex-col justify-between items-center mr-0 p-0 box-border bg-white dark:bg-gray-900">
+            <span className="flex text-4xl font-bold justify-center items-center gap-2 text-gray-700 dark:text-gray-400"><UserRound size={35} className="text-indigo-800 dark:text-indigo-400" /> About Me</span>
+            <div className="w-screen py-10 text-justify text-gray-600 dark:text-gray-500 flex flex-col md:flex-row">
                 <p className="w-screen md:w-1/2 p-10 text-lg flex flex-col items-center">
                 I am a Full Stack Developer pursuing a Master’s in Computer Applications (MCA) from NIT Bhopal, with a Bachelor’s degree from CIITM College, Jaipur. <br />
 
@@ -21,7 +21,7 @@ function About(){
                     </Button>
                 </a>
                 </p>
-                <div className="w-screen md:w-1/2 h-max flex flex-wrap gap-5 justify-around items-center">
+                <div className="w-screen md:w-1/2 h-max flex flex-wrap gap-5 justify-around items-center dark:text-gray-400">
                     <Container title="Internship" icon={BriefcaseBusiness} color="blue" content={<p>Data Analysis Group Intern at IBM May - July 2024.</p>} />
                     <Container title="Achievements" icon={Award} color="orange" content={<p>AIR 419 @ NIMCET-2023 <br />Solve 400+ DSA problems</p>} />
                     <Container title="Interests" icon={Heart} color="green" content={<p>Full Stack Development, Problem Solving, Reading Tech Blogs</p>} />
@@ -40,7 +40,7 @@ const colorClasses = {
 
 function Container({title,icon: Icon,color,content}){
     return (
-        <div className="w-2/3 md:w-1/3 min-h-[20vh] h-max p-2 shadow-2xl flex flex-col justify-center gap-5 duration-500 hover:scale-110">
+        <div className="w-2/3 md:w-1/3 min-h-[20vh] h-max p-2 shadow-2xl dark:shadow-gray-800 dark:bg-gray-800 flex flex-col justify-center gap-5 duration-500 hover:scale-110 rounded-lg">
             <span className="flex gap-3 font-bold">
                 {Icon &&<Icon className={`${colorClasses[color][0]} p-2 rounded-md h-[5vh] w-[5vh] ${colorClasses[color][1]}`} /> }
                 {title}

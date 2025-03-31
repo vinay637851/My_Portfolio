@@ -6,3 +6,5 @@
 :root{
   overflow-x: hidden;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
